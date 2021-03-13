@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>eDPI Calculator</title>
+                <link href="./style.css" type="text/css" rel="stylesheet" />
+        </head>
+        <body>
+                <main>
+                        <section class="info">
+                                <h1>eDPI Calculator for First Person Shooter Games</h1>
+                                <h2>This website is utilized to take your DPI and in-game sensitivity to calculate your universal eDPI. Your eDPI will then be saved so you can compare your eDPI over time and track different games.</h2>
+                        </section>
+                        <form action="submission.html" method="POST" class=dpi-calc>
+                                <div class="input-fields">
+                                        <div class="game-select">
+                                                <select id="game" name="game">
+                                                        <option value="Apex Legends">Apex Legends</option>
+                                                        <option value="Cold War">Cold War</option>
+                                                        <option value="CS:GO">CS:GO</option>
+                                                        <option value="Fortnite">Fortnite</option>
+                                                        <option value="Minecraft">Minecraft</option>
+                                                        <option value="Overwatch">Overwatch</option>
+                                                        <option value="Rainbow Six: Siege">Rainbow Six: Siege</option>
+                                                        <option value="Rust">Rust</option>
+                                                        <option value="Valorant">Valorant</option>
+                                                </select>
+                                        </div>
+                                        <div class="dpi-select">
+                                                <input type="number" name="dpi" id="dpi" value placeholder="Enter mouse dpi here..." min="1">
+                                                <label for="dpi">Mouse DPI</label>
+                                        </div>
+                                        
+                                        <div class="sens-select">
+                                                <input type="number" name="sens" id="sens" value placeholder="Enter sensitivity here..." min=".00000001">
+                                                <label for="sens">In-Game Sensitivity</label>
+                                        </div>
+                                </div>
+                        </form>
+                        <form class="btn">
+                                <input type="submit" value="Calculate" class="calculate">
+                        </form>
+                </main>
+        </body>
+</html>
