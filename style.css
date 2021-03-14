@@ -101,6 +101,7 @@ h2{
         min-height: 60vh;
         display: flex;
         flex-direction: column;
+        text-align:center;
 }
 
 .input-fields{
@@ -118,13 +119,37 @@ h2{
 
 .game-select{
         flex: 1;
+        margin:20px;
 }
 
 .dpi-select{
         flex: 1;
+        margin:20px;
 }
 
 .sens-select{
         flex: 1;
+        margin:20px;
+}
 
+.input-fields input, .input-fields select{
+        border-radius: 5px;
+        width: 40%;
+        padding: 10px;
+        font-size:15px
+}
+
+label{
+        margin:20px;
+        font-size: 25px;
+}
+
+.calculate{
+        border: 2px solid black;
+        width: 150px;
+        height: 50px;
+        cursor: pointer;
+        font-size:16px;
+        justify-content: center;
+        margin: 10px;
 }
