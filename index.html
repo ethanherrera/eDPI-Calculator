@@ -3,16 +3,40 @@
         <head>
                 <title>eDPI Calculator</title>
                 <link href="./style.css" type="text/css" rel="stylesheet" />
+                <link rel="preconnect" href="https://fonts.gstatic.com">
+                <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
         </head>
         <body>
+
+                <header>
+                        <div class="logo-container">
+                                <img src="./monke.jpg" alt="Monke Logo">
+                                <h4 class="logo">Monkey Calculations <br>by<br>Ethan Herrera</h4>
+                        </div>
+                        <nav class="navigation">
+                                <ul class="nav-links">
+                                        <li><a href="" class="nav-link">pee</a></li>
+                                        <li><a href="" class="nav-link">pee</a></li>
+                                        <li><a href="" class="nav-link">poopoo</a></li>
+                                </ul>
+                        </nav>
+                        <div class="account-container">
+                                <img src="./account-icon3.png" alt="Account-Icon">
+                        </div>
+                </header>
+
                 <main>
-                        <section class="info">
-                                <h1>eDPI Calculator for First Person Shooter Games</h1>
-                                <h2>This website is utilized to take your DPI and in-game sensitivity to calculate your universal eDPI. Your eDPI will then be saved so you can compare your eDPI over time and track different games.</h2>
-                        </section>
+                <section>
+                        <div class="introduction">
+                                <div class="introduction-text">
+                                        <h1>eDPI Calculator for First Person Shooter Games</h1>
+                                        <h2>This website is utilized to take your DPI and in-game sensitivity to calculate your universal eDPI. Your eDPI will then be saved so you can compare your eDPI over time and track different games.</h2>
+                                </div>
+                        </div>
+
                         <form action="submission.html" method="POST" class=dpi-calc>
                                 <div class="input-fields">
-                                        <div class="game-select">
+                                        <div class="game-select, input">
                                                 <select id="game" name="game">
                                                         <option value="Apex Legends">Apex Legends</option>
                                                         <option value="Cold War">Cold War</option>
@@ -25,20 +49,22 @@
                                                         <option value="Valorant">Valorant</option>
                                                 </select>
                                         </div>
-                                        <div class="dpi-select">
+                                        <div class="dpi-select, input">
                                                 <input type="number" name="dpi" id="dpi" value placeholder="Enter mouse dpi here..." min="1">
                                                 <label for="dpi">Mouse DPI</label>
                                         </div>
                                         
-                                        <div class="sens-select">
+                                        <div class="sens-select, input">
                                                 <input type="number" name="sens" id="sens" value placeholder="Enter sensitivity here..." min=".00000001">
                                                 <label for="sens">In-Game Sensitivity</label>
                                         </div>
                                 </div>
                         </form>
-                        <form class="btn">
-                                <input type="submit" value="Calculate" class="calculate">
-                        </form>
+                </section>
+                <form class="btn">
+                        <input type="submit" value="Calculate" class="calculate">
+                 </form>
+
                 </main>
         </body>
 </html>
